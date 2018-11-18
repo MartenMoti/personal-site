@@ -1,0 +1,46 @@
+$navbar-height: 75px
+    
+nav.navbar
+    width: 100%
+    height: $navbar-height
+    margin: 0px
+    padding: 0px
+    background-color: $dark-grey
+    line-height: $navbar-height
+
+    .name
+        font-family: 'Space Mono', monospace
+        color: $secondary-text
+        text-decoration: none
+        transition: color 0.25s ease-in-out 0s
+        font-size: 22px
+        padding-left: 50px
+
+    .name:hover
+        color: white
+        // font-size: 40px
+
+    .navitems
+        list-style-type: none
+        float: right
+        margin-top: 0px
+        margin-bottom: 0px
+        margin-right: 25px
+
+        .navitem
+            display: inline-block
+            width: auto
+            height: $navbar-height
+
+            a
+                color: $secondary-text
+                font-family: 'Space Mono', monospace
+                text-decoration: none
+                transition: color 0.25s ease-in-out 0s
+                font-size: 18px
+                padding: 10px
+
+            a:hover
+                color: white
+
+

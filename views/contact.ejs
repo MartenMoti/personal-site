@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marten Voorberg</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="homepage-container">
+    <%- include('nav', {}); %>
+
+    <div class="center-contact">
+        <h2>Want to get in touch?</h2>
+        <p>You can email me directly at <span class="email">martenvoorberg@gmail.com</span> or use the convenient form below.</p>
+
+        <form method="POST" action="sendcontact">
+            <div class="subheader">Name</div>
+            <input name="name" class="single-line-input" type="textfield">
+
+            <div class="subheader">Email</div>
+            <input name="email" class="single-line-input" type="textfield">
+
+            <div class="subheader">Message</div>
+            <textarea name="message"></textarea>
+
+            <input class="button" type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>
