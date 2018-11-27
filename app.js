@@ -44,7 +44,7 @@ app.post('/sendcontact', function(req, res) {
         }
     });
 
-    res.render('sendcontact.ejs')
+    res.render('sendcontact.ejs');
 });
 
 app.get('/about', function(req ,res) {
