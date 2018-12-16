@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express();
+let express = require('express');
+let app = express();
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
@@ -33,7 +33,7 @@ app.post('/sendcontact', function(req, res) {
     let mailOptions = {
         from: 'mailervoorberg@gmail.com',
         to: 'martenvoorberg@gmail.com',
-        subject: 'Message from ' + name,
+        subject: 'Message from ' + name + ' | ' + email,
         text: message
     };
 
@@ -44,7 +44,7 @@ app.post('/sendcontact', function(req, res) {
         }
     });
 
-    res.render('sendcontact.ejs')
+    res.render('sendcontact.ejs');
 });
 
 app.get('/about', function(req ,res) {
