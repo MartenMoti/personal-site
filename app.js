@@ -26,7 +26,7 @@ app.post('/sendcontact', function(req, res) {
         service: 'gmail',
         auth: {
             user: 'mailervoorberg@gmail.com', 
-            pass: 'saywhatagain'
+            pass: ''
         }
     });
 
